@@ -1,6 +1,6 @@
 import streamlit as st
 
-menu = st.sidebar.selectbox('MENU',options=['회원가입','로그인'])
+menu = st.sidebar.selectbox('MENU',options=['회원가입','로그인','정보수정'])
 
 if menu == '회원가입':
     #회원가입 아이디, 비밀번호, 비밀번호 확인, 나이, 성별, 전화번호
@@ -22,3 +22,5 @@ if menu == '로그인':
         st.sidebar.write(login_id)
         st.sidebar.write(login_pw)
 
+if menu == '정보수정':
+    st.subheader('정보수정')
